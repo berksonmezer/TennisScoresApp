@@ -1,6 +1,33 @@
 <resources>
     <string name="app_name">TennisScoresApp</string>
     <string name="welcome">Welcome to Wimbledon!</string>
+    <string name="reset">RESET</string>
+    <string name="double_fault">DOUBLE FAULT</string>
+    <string name="ace">ACE</string>
+    <string name="win_point">WIN POINT</string>
+    <string name="sets">Sets:</string>
+    <string name="games">Games:</string>
+    <string name="player1">Player 1</string>
+    <string name="player2">Player 2</string>
+    <string name="point_player1">Point for Player 1!</string>
+    <string name="point_player2">Point for Player 2!</string>
+    <string name="match_point_player1">Match Point for Player 1!</string>
+    <string name="match_point_player2">Match Point for Player 2!</string>
+    <string name="game_point_player1">Game Point for Player 1!</string>
+    <string name="game_point_player2">Game Point for Player 2!</string>
+    <string name="set_point_player1">Set Point for Player 1!</string>
+    <string name="set_point_player2">Set Point for Player 2!</string>
+    <string name="deuce">Deuce!</string>
+    <string name="restart">Click This Button to Restart the Match!</string>
+    <string name="player1_won_match">Player 1 Won the Match!</string>
+    <string name="player2_won_match">Player 2 Won the Match!</string>
+    <string name="player1_won_set">Player 1 Won the Set!</string>
+    <string name="player2_won_set">Player 2 Won the Set!</string>
+    <string name="set">Set</string>
+    <string name="game">Game</string>
+    <string name="player1_won_game">Player 1 Won the Game!</string>
+    <string name="player2_won_game">Player 2 Won the Game!</string>
+
 </resources>
 
 

@@ -43,9 +43,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_columnSpan="3"
-                        android:layout_marginLeft="72dp"
+                        android:layout_marginLeft="60dp"
                         android:layout_marginTop="16dp"
-                        android:text="Player 1"
+
+                        android:text="@string/player1"
                         android:textColor="#000000"
                         android:textSize="24sp" />
 
@@ -54,7 +55,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="8dp"
                         android:layout_marginTop="8dp"
-                        android:text="Games:"
+                        android:text="@string/games"
                         android:textColor="#000000"
                         android:textSize="20sp" />
 
@@ -83,7 +84,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="8dp"
                         android:layout_marginTop="8dp"
-                        android:text="Sets:"
+                        android:text="@string/sets"
                         android:textColor="#000000"
                         android:textSize="20sp" />
 
@@ -105,7 +106,7 @@
                     android:layout_marginLeft="24dp"
                     android:layout_marginRight="24dp"
                     android:layout_marginTop="24dp"
-                    android:text="WIN POINT"
+                    android:text="@string/win_point"
                     android:textSize="14sp"
                     android:onClick="player1Scores"/>
 
@@ -117,7 +118,7 @@
                     android:layout_marginLeft="24dp"
                     android:layout_marginRight="24dp"
                     android:layout_marginTop="8dp"
-                    android:text="ACE"
+                    android:text="@string/ace"
                     android:textSize="14sp"
                     android:onClick="player1Scores"/>
 
@@ -129,7 +130,7 @@
                     android:layout_marginLeft="24dp"
                     android:layout_marginRight="24dp"
                     android:layout_marginTop="8dp"
-                    android:text="DOUBLE FAULT"
+                    android:text="@string/double_fault"
                     android:textSize="14sp"
                     android:onClick="player2Scores"/>
 
@@ -167,7 +168,7 @@
                         android:layout_columnSpan="3"
                         android:layout_marginLeft="3dp"
                         android:layout_marginTop="16dp"
-                        android:text="Player 2"
+                        android:text="@string/player2"
                         android:textColor="#000000"
                         android:textSize="24sp" />
 
@@ -187,7 +188,7 @@
                         android:layout_height="wrap_content"
 
                         android:layout_marginTop="8dp"
-                        android:text="Games:"
+                        android:text="@string/games"
                         android:textColor="#000000"
                         android:textSize="20sp" />
 
@@ -207,7 +208,7 @@
                         android:layout_height="wrap_content"
 
                         android:layout_marginTop="8dp"
-                        android:text="Sets:"
+                        android:text="@string/sets"
                         android:textColor="#000000"
                         android:textSize="20sp" />
 
@@ -230,7 +231,7 @@
                     android:layout_marginLeft="24dp"
                     android:layout_marginRight="24dp"
                     android:layout_marginTop="24dp"
-                    android:text="WIN POINT"
+                    android:text="@string/win_point"
                     android:textSize="14sp"
                     android:onClick="player2Scores"/>
 
@@ -242,7 +243,7 @@
                     android:layout_marginLeft="24dp"
                     android:layout_marginRight="24dp"
                     android:layout_marginTop="8dp"
-                    android:text="ACE"
+                    android:text="@string/ace"
                     android:textSize="14sp"
                     android:onClick="player2Scores"/>
 
@@ -254,7 +255,7 @@
                     android:layout_marginLeft="24dp"
                     android:layout_marginRight="24dp"
                     android:layout_marginTop="8dp"
-                    android:text="DOUBLE FAULT"
+                    android:text="@string/double_fault"
                     android:textSize="14sp"
                     android:onClick="player1Scores"/>
 
@@ -284,7 +285,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="16dp"
-        android:text="reset"
+        android:text="@string/reset"
         android:textSize="14sp"
         android:onClick="reset"/>
 

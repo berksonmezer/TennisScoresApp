@@ -30,10 +30,10 @@ public class MainActivity extends AppCompatActivity {
                 if (games1 >= 6 && (games1 - games2) >= 2) {
                     sets1++;
                     if (sets1 == 2) {
-                        message.setText("Player 1 won the match!");
+                        message.setText(R.string.player1_won_match);
 
                         Button reset = (Button) findViewById(R.id.resetButton);
-                        reset.setText("Click This Button to Restart the Match!");
+                        reset.setText(R.string.restart);
                         Button point1 = (Button) findViewById(R.id.pointButton1);
                         point1.setClickable(false);
                         Button point2 = (Button) findViewById(R.id.pointButton2);
@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
                         fault2.setClickable(false);
 
                     } else {
-                        message.setText("Player 1 won the set " + (sets1 + sets2) + "!");
+                        message.setText(getString(R.string.player1_won_set) + " (" + getString(R.string.set) + ":" + (sets1 + sets2) + ")");
                     }
                     setSets1View();
                     games1 = 0;
@@ -75,10 +75,10 @@ public class MainActivity extends AppCompatActivity {
                 if (games2 >= 6 && (games2 - games1) >= 2) {
                     sets2++;
                     if (sets2 == 2) {
-                        message.setText("Player 2 won the match!");
+                        message.setText(R.string.player2_won_match);
 
                         Button reset = (Button) findViewById(R.id.resetButton);
-                        reset.setText("Click This Button to Restart the Match!");
+                        reset.setText(R.string.restart);
                         Button point1 = (Button) findViewById(R.id.pointButton1);
                         point1.setClickable(false);
                         Button point2 = (Button) findViewById(R.id.pointButton2);
@@ -93,7 +93,7 @@ public class MainActivity extends AppCompatActivity {
                         fault2.setClickable(false);
 
                     } else {
-                        message.setText("Player 2 won the set " + (sets1 + sets2) + "!");
+                        message.setText(getString(R.string.player2_won_set) + " (" + getString(R.string.set) + ":" + (sets1 + sets2) + ")");
                     }
                     setSets2View();
                     games1 = 0;
@@ -113,84 +113,84 @@ public class MainActivity extends AppCompatActivity {
     private String messageCreator1() {
 
             if ((score1 - score2) >= 2 && score1 >= 4) {
-                return "Player 1 won the game " + (games1 + games2 + 1) + " in set " + (sets1 + sets2 + 1) + "!";
+                return getString(R.string.player1_won_game) + " (" + getString(R.string.game) + ":" +(games1 + games2 + 1) + ", " + getString(R.string.set) + ":" + (sets1 + sets2 + 1) + ")";
             } else if ((score1 - score2) == 1 && score1 >= 4 && score2 >= 3) {
                 if (games1 >= 5 && (games1 - games2) >= 1) {
                     if (sets1 == 1) {
-                        return "Match point for Player 1!";
+                        return getString(R.string.match_point_player1);
                     } else {
-                        return "Set point for Player 1!";
+                        return getString(R.string.set_point_player1);
                     }
                 } else {
-                    return "Game point for Player 1!";
+                    return getString(R.string.game_point_player1);
                 }
             } else if ((score1 - score2) == 1 && score1 == 3 && score2 <= 2) {
                 if (games1 >= 5 && (games1 - games2) >= 1) {
                     if (sets1 == 1) {
-                        return "Match point for Player 1!";
+                        return getString(R.string.match_point_player1);
                     } else {
-                        return "Set point for Player 1!";
+                        return getString(R.string.set_point_player1);
                     }
                 } else {
-                    return "Game point for Player 1!";
+                    return getString(R.string.game_point_player1);
                 }
             } else if (score1 == 3 && score2 <= 2) {
                 if (games1 >= 5 && (games1 - games2) >= 1) {
                     if (sets1 == 1) {
-                        return "Match point for Player 1!";
+                        return getString(R.string.match_point_player1);
                     } else {
-                        return "Set point for Player 1!";
+                        return getString(R.string.set_point_player1);
                     }
                 } else {
-                    return "Game point for Player 1!";
+                    return getString(R.string.game_point_player1);
                 }
             } else if (score1 >= 3 && score2 >= 3 && score1 == score2) {
-                return "Deuce!";
+                return getString(R.string.deuce);
             }
 
 
 
-        return "Point for Player 1";
+        return getString(R.string.point_player1);
     }
     private String messageCreator2() {
 
             if ((score2 - score1) >= 2 && score2 >= 4) {
-                return "Player 2 won the game " + (games1 + games2 + 1) + " in set " + (sets1 + sets2 + 1) + "!";
+                return getString(R.string.player2_won_game) + " (" + getString(R.string.game) + ":" +(games1 + games2 + 1) + ", " + getString(R.string.set) + ":" + (sets1 + sets2 + 1) + ")";
             } else if ((score2 - score1) == 1 && score2 >= 4 && score1 >= 3) {
                 if (games2 >= 5 && (games2 - games1) >= 1) {
                     if (sets2 == 1) {
-                        return "Match point for Player 2!";
+                        return getString(R.string.match_point_player2);
                     } else {
-                        return "Set point for Player 2!";
+                        return getString(R.string.set_point_player2);
                     }
                 } else {
-                    return "Game point for Player 2!";
+                    return getString(R.string.game_point_player2);
                 }
             } else if ((score2 - score1) == 1 && score2 == 3 && score1 <= 2) {
                 if (games2 >= 5 && (games2 - games1) >= 1) {
                     if (sets2 == 1) {
-                        return "Match point for Player 2!";
+                        return getString(R.string.match_point_player2);
                     } else {
-                        return "Set point for Player 2!";
+                        return getString(R.string.set_point_player2);
                     }
                 } else {
-                    return "Game point for Player 2!";
+                    return getString(R.string.game_point_player2);
                 }
             } else if (score2 == 3 && score1 <= 2) {
                 if (games2 >= 5 && (games2 - games1) >= 1) {
                     if (sets2 == 1) {
-                        return "Match point for Player 2!";
+                        return getString(R.string.match_point_player2);
                     } else {
-                        return "Set point for Player 2!";
+                        return getString(R.string.set_point_player2);
                     }
                 } else {
-                    return "Game point for Player 2!";
+                    return getString(R.string.game_point_player2);
                 }
             } else if (score2 >= 3 && score1 >= 3 && score2 == score1) {
-                return "Deuce!";
+                return getString(R.string.deuce);
             }
 
-        return "Point for Player 2";
+        return getString(R.string.point_player2);
     }
 
 
@@ -275,10 +275,10 @@ public class MainActivity extends AppCompatActivity {
         setSets1View();
         setSets2View();
         TextView message = (TextView) findViewById(R.id.message);
-        message.setText("Welcome to Wimbledon!");
+        message.setText(R.string.welcome);
 
         Button reset = (Button) findViewById(R.id.resetButton);
-        reset.setText("Reset");
+        reset.setText(R.string.reset);
         Button point1 = (Button) findViewById(R.id.pointButton1);
         point1.setClickable(true);
         Button point2 = (Button) findViewById(R.id.pointButton2);
