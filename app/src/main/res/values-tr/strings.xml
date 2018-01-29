@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TenisSkorTutucu</string>
+    <string name="welcome">Wimbledon\'a Hoşgeldiniz!</string>
+    <string name="reset">SIFIRLA</string>
+    <string name="double_fault">ÇİFT HATA</string>
+    <string name="ace">ACE</string>
+    <string name="win_point">SAYI</string>
+    <string name="sets">Set:</string>
+    <string name="games">Oyun:</string>
+    <string name="player1">1. Oyuncu</string>
+    <string name="player2">2. Oyuncu</string>
+    <string name="point_player1">1. Oyuncu için Sayı</string>
+    <string name="point_player2">2. Oyuncu için Sayı</string>
+    <string name="match_point_player1">1. Oyuncu için Maç Sayısı</string>
+    <string name="match_point_player2">2. Oyuncu için Maç Sayısı</string>
+    <string name="game_point_player1">1. Oyuncu için Oyun Sayısı</string>
+    <string name="game_point_player2">2. Oyuncu için Oyun Sayısı</string>
+    <string name="set_point_player1">1. Oyuncu için Set Sayısı</string>
+    <string name="set_point_player2">2. Oyuncu için Set Sayısı</string>
+    <string name="deuce">Eşitlik!</string>
+    <string name="restart">Maça Tekrar Başlamak için Buraya Tıklayın!</string>
+    <string name="player1_won_match">1. Oyuncu Maçı kazandı!</string>
+    <string name="player2_won_match">2. Oyuncu Maçı Kazandı!</string>
+    <string name="player1_won_set">1. Oyuncu Seti Kazandı!</string>
+    <string name="player2_won_set">2. Oyuncu Seti Kazandı!</string>
+    <string name="set">Set</string>
+    <string name="game">Oyun</string>
+    <string name="player1_won_game">1. Oyuncu Oyunu kazandı.</string>
+    <string name="player2_won_game">2. Oyuncu Oyunu Kazandı!</string>
+</resources>
